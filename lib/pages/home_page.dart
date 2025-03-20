@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lolarenapro/components/grid_creator.dart';
+import 'package:lolarenapro/util/my_box.dart';
 
 class HomePage extends StatelessWidget{
   const HomePage({super.key});
@@ -14,19 +16,9 @@ class HomePage extends StatelessWidget{
               AspectRatio(
                 aspectRatio: 1,
                 child: SizedBox(
+                  height: double.infinity,
                   width: double.infinity,
-                  child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3
-                      ),
-                      itemBuilder: (context, index){
-                        return Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            color: Colors.blue,
-                          ),
-                        );
-                      }),
+                  child: MyGrid(),
                 ),
               )
             ],
