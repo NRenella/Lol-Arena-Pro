@@ -12,13 +12,9 @@ class HomePage extends StatelessWidget{
         child: Center(
           child: Column(
             children: [
-              AspectRatio(
-                aspectRatio: 1,
-                child: SizedBox(
-                  height: double.infinity,
-                  width: double.infinity,
-                  child: MyGrid(),
-                ),
+              SizedBox(height: 50,),
+              Expanded(
+                  child: MyGrid()
               )
             ],
           ),

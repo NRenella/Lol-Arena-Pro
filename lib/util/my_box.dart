@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class MyBox extends StatelessWidget{
-  const MyBox({Key? key}) : super(key: key);
+  final String fileName;
+  final String championName;
+
+  const MyBox({
+    super.key,
+    required this.fileName,
+    required this.championName,
+});
 
   @override
   Widget build(BuildContext context) {
@@ -9,6 +16,7 @@ class MyBox extends StatelessWidget{
       padding: const EdgeInsets.all(8.0),
       child: Container(
         color: Colors.blue,
+        child: Image.asset('lib/assets/tiles/$fileName''_0.jpg'),
       ),
     );
   }
