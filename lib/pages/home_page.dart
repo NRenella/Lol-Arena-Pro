@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lolarenapro/components/grid_creator.dart';
-import 'package:lolarenapro/util/my_box.dart';
 
 class HomePage extends StatelessWidget{
   const HomePage({super.key});
